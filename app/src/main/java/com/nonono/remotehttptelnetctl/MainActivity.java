@@ -118,8 +118,7 @@ public class MainActivity extends AppCompatActivity {
                         public void run() {
                             TelnetSocketConnectionAPI telnet = new TelnetSocketConnectionAPI();
                             try {
-                                String pParams = {DOURL, DOCMD};
-                                telnet.execute(pParams);
+                                telnet.telnetcmd(DOURL, DOCMD);
                                 //getresult = telnet.telnetcmd(DOURL, DOCMD);
                                 finish = true;
                             } catch (Exception e) {
